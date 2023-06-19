@@ -1,0 +1,146 @@
+.listTodo1{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background: #E9E5D6;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.list-container1{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.complete span {
+    margin: 0 5px;
+}
+
+
+
+.parrafo-conteo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.complete-container{
+    width: 50%;
+    max-width: 50%;
+    margin-top: 20px;
+    border-radius: 15px;
+    background: var(--green1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.parrafo-conteo p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--baige);
+}
+
+.button-create {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 18px;
+    border: none;
+    background: var(--baige);
+    color: var(--green1);
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+  
+.button-create:hover {
+    background-color: var(--green1);
+    color: var(--baige);
+    transform: rotate(360deg);
+}
+
+.title-list{
+    width: 95%;
+    max-width: 95%;
+    margin-top: 20px;
+    background: var(--white);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-list h2{
+    margin-top: 30px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.title-list img{
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.waiting{
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 520px){
+
+    .complete-container{
+        width: 75%;
+        max-width: 75%;
+    }
+
+    .parrafo-conteo p{
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        letter-spacing: 2px;
+        color: var(--baige);
+    }
+}
+
+@media screen and (max-width: 420px){
+    .title-list img{
+        width: 90%;
+        max-width: 90%;
+        height: 90%;
+    }
+}

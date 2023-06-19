@@ -1,0 +1,120 @@
+.name-user{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.name-saludo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.name-saludo h3{
+    margin-bottom: 0;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.name-saludo p{
+    margin-bottom: 0;
+    margin-top: 0;
+    background: #E9E5D6;
+    border-radius: 15px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 5px;
+}
+
+.name-img img{
+    border-radius: 50%;
+    border: 3px solid var(--green1);
+}
+
+.img-photo{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background: var(--baige);
+    border-radius: 15px;
+}
+
+.img-girl{
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.img-girl img{
+    border-radius: 15px;
+}
+
+/*MEDIA-RESPONSIVE*/
+
+@media screen and (max-width: 1070px){
+    .img-photo{
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1070px){
+    .img-photo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .name-user{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name-saludo{
+        align-items: center;
+    }
+
+    .name-saludo p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .img-girl{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+     
+    .img-girl img{
+        border-radius: 15px;
+        width: 70%;
+        height: 70%;
+    }
+}

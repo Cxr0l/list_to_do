@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>List To Do</title>
+</head>
+<body>
+    <main class="container1">
+
+        <section class="img-main">
+            <img src="./img/largo2.png" alt="main-img" width="720" height="206">
+        </section>
+
+        <div class="container1-2">
+
+            <section class="name-user">
+                <div class="name-img">
+                    <img src="./img/user.jpg" alt="user" width="170" height="170">
+                </div>
+    
+                <div class="name-saludo">
+                    <h3>🌿Home🌿</h3>
+                    <p>🪴 Hi! :) this is my planner</p>
+                </div>
+            </section>
+    
+            <section class="img-photo">
+
+                <div class="img-girl">
+                    <img src="./img/photo2.jpg" alt="photo1" width="420" height="530">
+                </div>
+                
+                <div class="calendar">
+
+                    <div class="header-calendar">
+                        <p class="current-date"></p>
+                        <div class="icons">
+                            <span id="prev" class="material-symbols-rounded"><</span>
+                            <span id="next" class="material-symbols-rounded">></span>
+                        </div>
+                    </div>
+
+                    <div class="calendar-data">
+                        <ul class="weeks">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                        </ul>
+                        <ul class="days"></ul>
+                    </div>
+
+                </div>
+
+            </section>
+    
+            <section class="title-container">
+    
+                <div class="title">
+                    <h1>LIST TO DO</h1>
+                </div>
+    
+                <div class="input-buscar">
+                    <input class="input-bus" type="text" name="" placeholder="Buscar...">
+                    
+                </div>
+    
+            </section>
+    
+            <section class="listTodo1">
+    
+                <div class="list-container1">
+    
+                    <div class="parrafo-conteo">
+
+                        <div class="complete-container">
+                            <p class="complete">
+                                You have completed 
+                                <span>0</span>
+                                of 
+                                <span>0</span>
+                            </p>
+                        </div>
+
+                        <div class="button-complete">
+                            <button class="button-create" id="button-create">+</button>
+                        </div>
+
+                    </div>
+    
+                    <div class="title-list" id="title1">
+                        <h2>There are not To Do list</h2>
+                        <img src="./img/circle.jpg" alt="photo-nothing" width="350" height="350">
+                        <p class="waiting">Waiting...</p>
+                    </div>
+
+                    <div class="title-list2 close" id="title2">
+    
+                        <div class="form-section">
+                            <form class="form">
+                
+                                <h2 class="form-name">Write your new TODO</h2>
+
+                                <textarea class="createTodo" name="" id="createTodo" cols="30" rows="10" placeholder="Agregar tarea"></textarea>
+                
+                                <div class="form-button">
+                
+                                    <button id="addTodo">Agregar</button>
+                                    <button id="cancelarTodo">Cancelar</button>
+                
+                                </div>
+                
+                            </form>
+                
+                        </div>
+                
+                    </div>
+
+
+                    <div class="listTodo2">
+
+                        <div class="listTodo2-cont">
+                            <ul id="createName">
+                                <li class="todoList first">
+                                    <span class="icon icon-check false">✅</span>
+                                    <p class="todoItem-p false"></p>
+                                    <span class="icon icon-edit">✏️</span>
+                                    <span class="icon icon-delete">❌</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    
+    
+                </div>
+    
+            </section>
+
+        </div>
+        
+
+    </main>
+    
+    <script src="./src/calendar.js"></script>
+    <!-- <script src="./src/index.js"></script> -->
+    <script src="./src/botones.js"></script>
+    <script src="./src/index2.js"></script>
+</body>
+</html>

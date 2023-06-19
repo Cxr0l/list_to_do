@@ -1,0 +1,153 @@
+.calendar{
+    width: 450px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+  
+.header-calendar{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+    background: var(--green2);
+}
+
+.header-calendar .icons{
+    display: flex;
+}
+
+.header-calendar .icons span{
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: var(--white);
+    font-weight: bold;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+}
+
+.icons span:last-child{
+    margin-right: -10px;
+}
+
+.header-calendar .icons span:hover{
+    background: var(--green1);
+}
+
+.header-calendar .current-date{
+    font-size: 1.45rem;
+    font-weight: 500;
+    font-weight: bold;
+    color: var(--white);
+}
+
+/*MEDIA-RESPONSIVE*/
+
+@media screen and (max-width: 1070px){
+    .calendar{
+        width: 450px;
+        margin-bottom: 20PX;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .calendar {
+      width: 340px;
+      margin-bottom: 20px;
+    }
+    
+    .header-calendar {
+      padding: 15px 20px 5px;
+    }
+    
+    .header-calendar .icons span {
+      height: 30px;
+      width: 30px;
+      margin: 0 3px;
+      font-size: 1.5rem;
+      line-height: 30px;
+    }
+    
+    .header-calendar .current-date {
+      font-size: 1.2rem;
+    }
+    
+    .calendar-data ul {
+      margin-right: 20px;
+    }
+    
+    .calendar-data .weeks li {
+      font-size: 0.80rem;
+    }
+    
+    .calendar-data .days li {
+      margin-top: 20px;
+    }
+    
+    .days li::before {
+      height: 20px;
+      width: 20px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .calendar {
+      width: 90%;
+      max-width: 90%;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    }
+  
+    .calendar-data .weeks li {
+      font-weight: 500;
+      cursor: default;
+    }
+  
+    .calendar-data .days li {
+      z-index: 1;
+      cursor: pointer;
+      position: relative;
+      margin-top: 20px;
+    }
+
+    .calendar-data .weeks li {
+        font-size: 0.80rem;
+    }
+  
+    .days li::before {
+      height: 30px !important;
+      width: 30px !important;
+    }
+  
+    .days li.active::before {
+        background: var(--green1);
+    }
+  
+    .days li:not(.active):hover::before {
+        background: #f2f2f2;
+    }
+  
+}
+
+@media screen and (max-width: 420px){
+    .calendar {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .calendar-data .weeks li {
+        font-size: 0.85rem;
+    }
+
+    .calendar-data ul {
+        margin-right: 0px !important;
+    }
+}
